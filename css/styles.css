@@ -1,0 +1,3119 @@
+/*-----------
+    Fonts
+-----------*/
+@font-face
+{
+    font-family: 'TT Drugs';
+    font-weight: normal;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/TTDrugs-Regular.woff2') format('woff2'),
+    url('../fonts/TTDrugs-Regular.woff') format('woff'),
+    url('../fonts/TTDrugs-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'TT Drugs';
+    font-weight: 700;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/TTDrugs-Bold.woff2') format('woff2'),
+    url('../fonts/TTDrugs-Bold.woff') format('woff'),
+    url('../fonts/TTDrugs-Bold.ttf') format('truetype');
+}
+
+
+
+/*------------------
+    Reset styles
+------------------*/
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    scroll-margin-top: 24px;
+}
+
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+        -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body
+{
+    margin: 0;
+
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    text-rendering: optimizeLegibility;
+    text-decoration-skip: objects;
+}
+
+img
+{
+    border-style: none;
+}
+
+textarea
+{
+    overflow: auto;
+}
+
+input,
+textarea,
+input:active,
+textarea:active,
+button
+{
+    margin: 0;
+
+    -webkit-border-radius: 0;
+            border-radius: 0;
+         outline: none transparent !important;
+    box-shadow: none;
+
+    -webkit-appearance: none;
+            appearance: none;
+    -moz-outline: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+    margin: 0;
+
+    -webkit-appearance: none;
+}
+
+input[type=number]
+{
+    -moz-appearance: textfield;
+}
+
+:focus
+{
+    outline: 0;
+}
+
+:hover,
+:active
+{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+}
+
+
+::-ms-clear
+{
+    display: none;
+}
+
+
+
+/*---------------------
+    Vetnutritionist
+---------------------*/
+.vetnutritionist
+{
+    font-family: 'TT Drugs';
+
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    gap: 64px;
+}
+
+
+.vetnutritionist button
+{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+
+    display: inline-block;
+
+    cursor: pointer;
+    vertical-align: top;
+
+    color: inherit;
+    border: none;
+    background: none;
+}
+
+
+.vetnutritionist .cont
+{
+    width: 100%;
+    max-width: 1208px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+.vetnutritionist .block_title
+{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: calc(100% + 4px);
+
+    width: 800px;
+    max-width: 100%;
+    margin-bottom: 32px;
+
+    color: #25343f;
+}
+
+
+
+.vetnutritionist .head_block
+{
+    position: relative;
+
+    padding: 90px 0;
+
+    background: #beeaff;
+}
+
+
+.vetnutritionist .head_block .data
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 600px;
+    max-width: 100%;
+    min-height: 320px;
+
+    color: #25343f;
+}
+
+
+.vetnutritionist .head_block .title
+{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: calc(100% + 6px);
+}
+
+
+.vetnutritionist .head_block .desc
+{
+    font-family: 'Roboto';
+    font-size: 21px;
+    line-height: 30px;
+
+    margin-top: 24px;
+}
+
+
+.vetnutritionist .head_block .bottom
+{
+    font-family: 'Roboto';
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: auto;
+    padding-top: 40px;
+}
+
+
+.vetnutritionist .head_block .btn
+{
+    font-size: 21px;
+    line-height: 30px;
+
+    width: 276px;
+    max-width: 100%;
+    height: 56px;
+
+    color: #fff;
+    border-radius: 48px;
+    background: #37a238;
+}
+
+
+.vetnutritionist .head_block .exp
+{
+    font-size: 15px;
+    line-height: 22px;
+
+    align-self: center;
+
+    width: calc(100% - 300px);
+
+    color: #3b5060;
+}
+
+
+.vetnutritionist .head_block .img
+{
+    position: absolute;
+    top: 0;
+    right: 50%;
+
+    display: block;
+
+    height: 100%;
+    margin-right: -620px;
+
+    pointer-events: none;
+}
+
+
+
+.vetnutritionist .advantages
+{
+    padding-bottom: 32px;
+}
+
+
+.vetnutritionist .advantages .row
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-bottom: -32px;
+    margin-left: -32px;
+}
+
+
+.vetnutritionist .advantages .row > *
+{
+    width: calc(20% - 32px);
+    margin-bottom: 32px;
+    margin-left: 32px;
+}
+
+
+.vetnutritionist .advantages .item
+{
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: #25343f;
+    border-radius: 15px;
+
+    gap: 12px;
+}
+
+
+.vetnutritionist .advantages .item.color1
+{
+    background: #beeaff;
+}
+
+.vetnutritionist .advantages .item.color2
+{
+    background: #e0ffbe;
+}
+
+.vetnutritionist .advantages .item.color3
+{
+    background: #ffefbe;
+}
+
+.vetnutritionist .advantages .item.color4
+{
+    background: #ffd5be;
+}
+
+.vetnutritionist .advantages .item.color5
+{
+    background: #e7beff;
+}
+
+
+.vetnutritionist .advantages .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .75);
+}
+
+
+.vetnutritionist .advantages .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.vetnutritionist .advantages .icon + *
+{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    justify-content: center;
+
+    min-height: 110px;
+}
+
+
+
+.vetnutritionist .advantages .desc
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 24px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 64px;
+    padding: 31px;
+
+    color: #25343f;
+    border: 1px solid #1b8cd1;
+    border-radius: 15px;
+}
+
+
+.vetnutritionist .advantages .desc img
+{
+    display: block;
+
+    width: 80px;
+    height: 80px;
+}
+
+
+.vetnutritionist .advantages .desc div
+{
+    width: calc(100% - 112px);
+}
+
+
+.vetnutritionist .advantages .desc span
+{
+    color: #1b8cd1;
+}
+
+
+.vetnutritionist .advantages .important
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 24px;
+
+    margin-top: 32px;
+
+    text-align: center;
+
+    color: #3b5060;
+}
+
+
+
+.vetnutritionist .questions .swiper
+{
+    overflow: visible !important;
+}
+
+
+.vetnutritionist .questions .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+.vetnutritionist .questions .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.vetnutritionist .questions .swiper-button-next,
+.vetnutritionist .questions .swiper-button-prev
+{
+    top: 0;
+    bottom: 0;
+
+    margin: auto 0;
+}
+
+
+.vetnutritionist .questions .swiper-horizontal > .swiper-pagination-bullets,
+.vetnutritionist .questions .swiper-pagination-bullets.swiper-pagination-horizontal,
+.vetnutritionist .questions .swiper-pagination-custom,
+.vetnutritionist .questions .swiper-pagination-fraction
+{
+    display: none !important;
+}
+
+
+.vetnutritionist .questions .item
+{
+    position: relative;
+
+    perspective: 1000px;
+}
+
+
+.vetnutritionist .questions .item .expand
+{
+    position: absolute;
+    z-index: 9;
+    top: 20px;
+    right: 20px;
+
+    width: 24px;
+    height: 24px;
+
+    opacity: .5;
+}
+
+
+.vetnutritionist .questions .item .inner
+{
+    transition: transform .3s linear;
+
+    transform-style: preserve-3d;
+}
+
+
+.vetnutritionist .questions .item .front,
+.vetnutritionist .questions .item .back
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-height: 480px;
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 15px;
+    background: #f0f9ff;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+
+.vetnutritionist .questions .item .back
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transform: rotateY(180deg);
+}
+
+
+.vetnutritionist .questions .item .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    height: 72px;
+    margin-bottom: 20px;
+}
+
+
+.vetnutritionist .questions .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.vetnutritionist .questions .item .name
+{
+    font-family: 'Roboto';
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 28px;
+
+    width: 100%;
+
+    color: #25343f;
+}
+
+
+.vetnutritionist .questions .item .desc
+{
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 22px;
+
+    width: 100%;
+
+    color: #25343f;
+}
+
+
+.vetnutritionist .questions .item:hover .inner
+{
+    transform: rotateY(180deg);
+}
+
+
+
+.vetnutritionist .questions .bottom
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 24px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 32px;
+    padding: 31px;
+
+    color: #3b5060;
+    border: 1px solid rgba(27, 140, 209, .25);
+    border-radius: 15px;
+}
+
+
+.vetnutritionist .questions .bottom div
+{
+    width: calc(100% - 288px);
+}
+
+
+.vetnutritionist .questions .bottom .btn
+{
+    font-size: 19px;
+    line-height: 28px;
+
+    width: 256px;
+    max-width: 100%;
+    height: 50px;
+
+    color: #fff;
+    border-radius: 48px;
+    background: #37a238;
+}
+
+
+
+.vetnutritionist .factors .data
+{
+    position: relative;
+
+    padding: 120px 0;
+
+    text-align: center;
+}
+
+
+.vetnutritionist .factors .data:before
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: rgba(47, 35, 29, .50);
+}
+
+
+.vetnutritionist .factors .cont
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+.vetnutritionist .factors .bg
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    object-fit: cover;
+}
+
+
+.vetnutritionist .factors .block_title
+{
+    width: 100%;
+
+    color: #fff;
+}
+
+
+.vetnutritionist .factors .row
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-bottom: -34px;
+    margin-left: -32px;
+    padding: 49px 0 15px;
+}
+
+
+.vetnutritionist .factors .row > *
+{
+    margin-bottom: 34px;
+    margin-left: 32px;
+}
+
+
+.vetnutritionist .factors .item
+{
+    font-family: 'Roboto';
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 28px;
+
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 20px 24px 20px 12px;
+
+    color: #fff;
+    border-radius: 40px;
+
+    gap: 4px;
+}
+
+
+.vetnutritionist .factors .item:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    pointer-events: none;
+
+    border-radius: inherit;
+
+            filter: blur(12.5px);
+    -webkit-filter: blur(12.5px);
+}
+
+
+.vetnutritionist .factors .item > *
+{
+    position: relative;
+    z-index: 2;
+}
+
+
+.vetnutritionist .factors .item.color1:before
+{
+    background: #34843a;
+}
+
+.vetnutritionist .factors .item.color2:before
+{
+    background: #f44336;
+}
+
+.vetnutritionist .factors .item.color3:before
+{
+    background: #fca21e;
+}
+
+.vetnutritionist .factors .item.color4:before
+{
+    background: #df4507;
+}
+
+.vetnutritionist .factors .item.color5:before
+{
+    background: #64b5f6;
+}
+
+.vetnutritionist .factors .item.color6:before
+{
+    background: #8bc34a;
+}
+
+.vetnutritionist .factors .item.color7:before
+{
+    background: #a16441;
+}
+
+
+.vetnutritionist .factors .item .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+}
+
+
+.vetnutritionist .factors .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.vetnutritionist .factors .bottom
+{
+    padding: 32px 0;
+}
+
+
+.vetnutritionist .factors .bottom ul
+{
+    display: flex;
+    flex-direction: column;
+
+    padding: 31px;
+
+    border: 1px solid #1b8cd1;
+    border-radius: 15px;
+    background: #fff;
+
+    gap: 8px;
+}
+
+
+.vetnutritionist .factors .bottom li
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 24px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-height: 32px;
+    padding-left: 44px;
+
+    list-style: none;
+
+    color: #25343f;
+    background: url(../images/ic_check.svg) 0 0/40px 40px no-repeat;
+}
+
+
+
+.vetnutritionist .create_diet .swiper
+{
+    overflow: visible !important;
+}
+
+
+.vetnutritionist .create_diet .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+.vetnutritionist .create_diet .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.vetnutritionist .create_diet .swiper-horizontal > .swiper-pagination-bullets,
+.vetnutritionist .create_diet .swiper-pagination-bullets.swiper-pagination-horizontal,
+.vetnutritionist .create_diet .swiper-pagination-custom,
+.vetnutritionist .create_diet .swiper-pagination-fraction
+{
+    display: none !important;
+}
+
+
+
+.vetnutritionist .create_diet .item
+{
+    padding: 20px;
+
+    color: #25343f;
+    border-radius: 15px;
+}
+
+
+.vetnutritionist .create_diet .item.color1
+{
+    background: #ffe2e0;
+}
+
+.vetnutritionist .create_diet .item.color2
+{
+    background: #f0f9ff;
+}
+
+.vetnutritionist .create_diet .item.color3
+{
+    background: #ecffd8;
+}
+
+
+.vetnutritionist .create_diet .thumb
+{
+    position: relative;
+
+    margin-bottom: 20px;
+    padding-bottom: 66.769%;
+
+    border-radius: 15px;
+}
+
+
+.vetnutritionist .create_diet .thumb img
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+.vetnutritionist .create_diet .name
+{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+
+.vetnutritionist .create_diet ul
+{
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 22px;
+
+    margin-top: 10px;
+}
+
+
+.vetnutritionist .create_diet ul li
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 20px;
+
+    list-style-type: none;
+}
+
+
+.vetnutritionist .create_diet ul li.hide
+{
+    display: none;
+}
+
+
+.vetnutritionist .create_diet ul li + li
+{
+    margin-top: 10px;
+}
+
+
+.vetnutritionist .create_diet ul li:before
+{
+    position: absolute;
+    top: 9px;
+    left: 6px;
+
+    display: block;
+
+    width: 3px;
+    height: 3px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
+.vetnutritionist .create_diet .spoler_btn
+{
+    font-family: 'Roboto';
+    font-size: 13px;
+    line-height: 18px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 10px;
+    padding: 3px 5px 3px 10px;
+
+    color: #3b5060;
+
+    gap: 4px;
+}
+
+
+.vetnutritionist .create_diet .spoler_btn .arr
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    transition: transform .2s linear;
+}
+
+
+.vetnutritionist .create_diet .spoler_btn span + span,
+.vetnutritionist .create_diet .spoler_btn.active span
+{
+    display: none;
+}
+
+.vetnutritionist .create_diet .spoler_btn.active span + span
+{
+    display: block;
+}
+
+.vetnutritionist .create_diet .spoler_btn.active .arr
+{
+    transform: rotate(180deg);
+}
+
+
+
+.vetnutritionist .create_diet_info
+{
+    padding: 64px 0;
+
+    background: #fff0e2;
+}
+
+
+.vetnutritionist .create_diet_info .head
+{
+    font-family: 'Roboto';
+    font-size: 21px;
+    line-height: 30px;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 0 64px;
+
+    color: #25343f;
+    border-bottom: 1px solid #3b5060;
+}
+
+
+.vetnutritionist .create_diet_info .head .image
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 240px;
+    height: 240px;
+}
+
+
+.vetnutritionist .create_diet_info .head .image img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.vetnutritionist .create_diet_info .head .text
+{
+    align-self: center;
+
+    width: calc(100% - 304px);
+    padding: 24px 0;
+}
+
+
+.vetnutritionist .create_diet_info .items
+{
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 32px;
+    margin-bottom: -32px;
+    margin-left: -32px;
+    padding: 0 32px;
+
+    color: #25343f;
+}
+
+
+.vetnutritionist .create_diet_info .items > *
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: calc(50% - 32px);
+    min-height: 48px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    padding-left: 64px;
+
+    background: url(../images/ic_check2.svg) 0 50%/48px 48px no-repeat;
+}
+
+
+.vetnutritionist .create_diet_info .bottom
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 24px;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 64px;
+    padding: 32px;
+
+    color: #3b5060;
+    border-radius: 15px;
+    background: #fff;
+}
+
+
+.vetnutritionist .create_diet_info .bottom .text
+{
+    align-self: center;
+
+    width: calc(100% - 380px);
+}
+
+
+.vetnutritionist .create_diet_info .bottom .action
+{
+    width: 348px;
+    max-width: 100%;
+
+    text-align: center;
+}
+
+
+.vetnutritionist .create_diet_info .bottom .btn
+{
+    font-size: 19px;
+    line-height: 28px;
+
+    display: block;
+
+    width: 100%;
+    height: 50px;
+
+    color: #fff;
+    border-radius: 48px;
+    background: #37a238;
+}
+
+
+.vetnutritionist .create_diet_info .bottom .exp
+{
+    font-size: 13px;
+    line-height: 18px;
+
+    margin-top: 10px;
+}
+
+
+
+.vetnutritionist .problems .data
+{
+    padding: 32px;
+
+    border-radius: 15px;
+    background: #f0f9ff;
+}
+
+
+.vetnutritionist .problems .row
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-bottom: -32px;
+    margin-left: -32px;
+}
+
+
+.vetnutritionist .problems .row > *
+{
+    width: calc(50% - 32px);
+    margin-bottom: 32px;
+    margin-left: 32px;
+}
+
+
+.vetnutritionist .problems .item
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 24px;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-right: 30px;
+
+    color: #25343f;
+}
+
+
+.vetnutritionist .problems .item .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+}
+
+
+.vetnutritionist .problems .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.vetnutritionist .problems .item .icon + *
+{
+    align-self: center;
+
+    width: calc(100% - 76px);
+}
+
+
+.vetnutritionist .problems .bottom
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 24px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 32px;
+    padding: 32px;
+
+    color: #25343f;
+    border-radius: 15px;
+    background: #fff;
+}
+
+
+.vetnutritionist .problems .bottom .thumb
+{
+    width: 336px;
+    max-width: 100%;
+
+    border-radius: 15px;
+}
+
+
+.vetnutritionist .problems .bottom .thumb img
+{
+    display: block;
+
+    width: 100%;
+
+    border-radius: inherit;
+}
+
+
+.vetnutritionist .problems .bottom .text
+{
+    width: calc(100% - 400px);
+}
+
+
+.vetnutritionist .problems .bottom .text > * + *
+{
+    margin-top: 32px;
+}
+
+
+
+.vetnutritionist .doctors
+{
+    padding: 64px 0;
+
+    background: #f0f9ff;
+}
+
+
+.vetnutritionist .doctors .block_title
+{
+    margin-bottom: 36px;
+}
+
+
+.vetnutritionist .doctors .swiper
+{
+    overflow: visible !important;
+}
+
+
+.vetnutritionist .doctors .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+.vetnutritionist .doctors .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.vetnutritionist .doctors .doctor .photo
+{
+    position: relative;
+
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+}
+
+
+.vetnutritionist .doctors .doctor .photo img
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+.vetnutritionist .doctors .doctor .name
+{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+
+    color: #25343f;
+}
+
+
+.vetnutritionist .doctors .doctor .post
+{
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 22px;
+
+    margin-top: 8px;
+    padding-left: 32px;
+
+    color: #3b5060;
+    background: url(../images/ic_user.svg) 0 50%/20px 20px no-repeat;
+}
+
+
+.vetnutritionist .doctors .doctor .addresses
+{
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 22px;
+
+    margin-top: 8px;
+    padding-left: 32px;
+
+    color: #3b5060;
+    background: url(../images/ic_location.svg) 0 50%/20px 20px no-repeat;
+}
+
+
+
+.vetnutritionist .basis_of_life .swiper
+{
+    overflow: visible !important;
+}
+
+
+.vetnutritionist .basis_of_life .swiper-slide
+{
+    position: relative;
+
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+.vetnutritionist .basis_of_life .swiper-slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.vetnutritionist .basis_of_life .swiper-button-next,
+.vetnutritionist .basis_of_life .swiper-button-prev
+{
+    top: 0;
+    bottom: 0;
+
+    margin: auto 0;
+}
+
+
+.vetnutritionist .basis_of_life .swiper-horizontal > .swiper-pagination-bullets,
+.vetnutritionist .basis_of_life .swiper-pagination-bullets.swiper-pagination-horizontal,
+.vetnutritionist .basis_of_life .swiper-pagination-custom,
+.vetnutritionist .basis_of_life .swiper-pagination-fraction
+{
+    display: none !important;
+}
+
+
+.vetnutritionist .basis_of_life .item
+{
+    min-height: 360px;
+    padding: 32px;
+
+    border-radius: 15px;
+}
+
+
+.vetnutritionist .basis_of_life .item .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 80px;
+    margin-bottom: 16px;
+}
+
+
+.vetnutritionist .basis_of_life .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.vetnutritionist .basis_of_life .item .name
+{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+
+    color: #25343f;
+}
+
+
+.vetnutritionist .basis_of_life .item .desc
+{
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 22px;
+
+    margin-top: 8px;
+
+    color: #25343f;
+}
+
+
+.vetnutritionist .basis_of_life .item.color1
+{
+    background: #f0f9ff;
+}
+
+.vetnutritionist .basis_of_life .item.color2
+{
+    background: #ffe2e0;
+}
+
+.vetnutritionist .basis_of_life .item.color3
+{
+    background: #ffefce;
+}
+
+.vetnutritionist .basis_of_life .item.color4
+{
+    background: #ecffd8;
+}
+
+
+.vetnutritionist .basis_of_life .bottom
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 32px;
+    padding: 32px;
+
+    border-top: 1px solid rgba(37, 52, 63, .50);
+}
+
+
+.vetnutritionist .basis_of_life .bottom .text
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 24px;
+
+    width: calc(100% - 359px);
+
+    color: #3b5060;
+}
+
+
+.vetnutritionist .basis_of_life .bottom .btn
+{
+    font-family: 'Roboto';
+    font-size: 19px;
+    line-height: 28px;
+
+    display: block;
+
+    width: 327px;
+    max-width: 100%;
+    height: 50px;
+
+    color: #fff;
+    border-radius: 48px;
+    background: #37a238;
+}
+
+
+
+.vetnutritionist .basis_of_life .notice
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 32px;
+
+    color: #25343f;
+    border-top: 1px solid rgba(37, 52, 63, .50);
+}
+
+
+.vetnutritionist .basis_of_life .notice .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+}
+
+
+.vetnutritionist .basis_of_life .notice .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.vetnutritionist .basis_of_life .notice .icon + *
+{
+    width: calc(100% - 92px);
+}
+
+
+
+.vetnutritionist .consult .data
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 32px;
+
+    border-radius: 15px;
+    background: #f0f9ff;
+}
+
+
+.vetnutritionist .consult .thumb
+{
+    width: 433px;
+    max-width: 100%;
+
+    border-radius: 15px;
+}
+
+
+.vetnutritionist .consult .thumb img
+{
+    display: block;
+
+    width: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+.vetnutritionist .consult .thumb + *
+{
+    width: calc(100% - 465px);
+}
+
+
+.vetnutritionist .consult .items
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #25343f;
+
+    gap: 32px;
+}
+
+
+.vetnutritionist .consult .items > *
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-height: 32px;
+    padding-left: 44px;
+
+    background: url(../images/ic_check.svg) 0 0/32px 32px no-repeat;
+}
+
+
+
+.vetnutritionist .prices .table_wrap
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 350px;
+}
+
+
+.vetnutritionist .prices .table_wrap:after
+{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 60px;
+
+    content: '';
+    pointer-events: none;
+
+    background: linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, .00) 100%);
+}
+
+
+.vetnutritionist .prices .table_wrap.show
+{
+    height: auto;
+}
+
+.vetnutritionist .prices .table_wrap.show:after
+{
+    display: none;
+}
+
+
+.vetnutritionist .prices table
+{
+    width: 100%;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.vetnutritionist .prices table th
+{
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+
+    padding: 14px 15px;
+
+    text-align: left;
+    vertical-align: middle;
+
+    color: #fff;
+    background: #3b5060;
+}
+
+
+.vetnutritionist .prices table th.center
+{
+    text-align: center;
+}
+
+
+.vetnutritionist .prices table th + th
+{
+    border-left: 1px solid #fff;
+}
+
+
+.vetnutritionist .prices table td
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 24px;
+
+    padding: 13px 15px;
+
+    text-align: left;
+    vertical-align: middle;
+
+    color: #25343f;
+}
+
+
+.vetnutritionist .prices table td.price
+{
+    font-weight: 700;
+
+    width: 200px;
+
+    table-layout: fixed;
+
+    text-align: center;
+}
+
+
+.vetnutritionist .prices table td + td
+{
+    border-left: 1px solid rgba(27, 140, 209, .25);
+}
+
+
+.vetnutritionist .prices table tbody tr:nth-child(2n) td
+{
+    background: #f0f9ff;
+}
+
+
+
+.vetnutritionist .prices .spoler_btn
+{
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 22px;
+
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin: -30px auto 0;
+    padding: 4px 6px 4px 12px;
+
+    color: #3b5060;
+    border-radius: 20px;
+    background: #f0f9ff;
+
+    gap: 4px;
+}
+
+
+.vetnutritionist .prices .spoler_btn .arr
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    transition: transform .2s linear;
+}
+
+
+.vetnutritionist .prices .spoler_btn span + span,
+.vetnutritionist .prices .spoler_btn.active span
+{
+    display: none;
+}
+
+.vetnutritionist .prices .spoler_btn.active span + span
+{
+    display: block;
+}
+
+.vetnutritionist .prices .spoler_btn.active .arr
+{
+    transform: rotate(180deg);
+}
+
+
+
+.vetnutritionist .action_block
+{
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-height: 600px;
+    padding: 64px 0;
+
+    text-align: center;
+
+    color: #fff;
+    background: #ddd;
+}
+
+
+.vetnutritionist .action_block:before
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: rgba(47, 35, 29, .50);
+}
+
+
+.vetnutritionist .action_block .cont
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+.vetnutritionist .action_block .block_title
+{
+    margin: 0 auto;
+
+    color: currentColor;
+}
+
+
+.vetnutritionist .action_block .desc
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+
+    width: 800px;
+    max-width: 100%;
+    margin: 24px auto 0;
+}
+
+
+.vetnutritionist .action_block .btn
+{
+    font-family: 'Roboto';
+    font-size: 21px;
+    line-height: 30px;
+
+    margin-top: 24px;
+    padding: 13px 32px;
+
+    color: #fff;
+    border-radius: 48px;
+    background: #37a238;
+}
+
+
+.vetnutritionist .action_block .bg
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+.vetnutritionist .tabs
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-bottom: 32px;
+
+    gap: 64px;
+}
+
+
+.vetnutritionist .tabs .btn
+{
+    font-family: 'Roboto';
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 28px;
+
+    position: relative;
+
+    display: block;
+
+    padding: 4px 0 2px;
+
+    transition: border-color .2s linear;
+
+    color: #3b5060;
+    border-bottom: 2px solid transparent;
+}
+
+
+.vetnutritionist .tabs .btn:hover,
+.vetnutritionist .tabs .btn.active
+{
+    border-color: currentColor;
+}
+
+
+.vetnutritionist .tab_content
+{
+    position: relative;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    height: 0;
+
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+
+.vetnutritionist .tab_content.active
+{
+    visibility: visible;
+    overflow: visible;
+
+    height: auto;
+
+    transition: opacity .5s linear;
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+
+.vetnutritionist .accordion_item .head
+{
+    position: relative;
+
+    padding: 14px 40px 14px 0;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid rgba(37, 52, 63, .50);
+}
+
+
+.vetnutritionist .accordion_item .head .title
+{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+
+    color: #25343f;
+}
+
+
+.vetnutritionist .accordion_item .head .icon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin: auto 0;
+
+    transition: transform .2s linear;
+}
+
+
+.vetnutritionist .accordion_item .data
+{
+    font-family: 'Roboto';
+    font-size: 17px;
+    line-height: 24px;
+
+    display: none;
+
+    padding: 16px 0 32px;
+
+    color: #25343f;
+}
+
+
+.vetnutritionist .accordion_item.active .head .icon
+{
+    transform: rotate(180deg);
+}
+
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    .vetnutritionist
+    {
+        gap: 40px;
+    }
+
+
+    .vetnutritionist .cont
+    {
+        padding: 0 20px;
+    }
+
+
+    .vetnutritionist .swiper-button-next,
+    .vetnutritionist .swiper-button-prev
+    {
+        display: none !important;
+    }
+
+
+    .vetnutritionist .block_title
+    {
+        font-size: 22px;
+        line-height: calc(100% + 2px);
+
+        width: 600px;
+        margin-bottom: 20px;
+    }
+
+
+    .vetnutritionist .head_block
+    {
+        padding: 98px 0;
+    }
+
+
+    .vetnutritionist .head_block .data
+    {
+        width: 400px;
+        min-height: 0;
+    }
+
+
+    .vetnutritionist .head_block .title
+    {
+        font-size: 26px;
+        line-height: calc(100% + 2px);
+    }
+
+
+    .vetnutritionist .head_block .desc
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        margin-top: 12px;
+    }
+
+
+    .vetnutritionist .head_block .bottom
+    {
+        margin-top: 24px;
+        padding: 0;
+    }
+
+
+    .vetnutritionist .head_block .btn
+    {
+        font-size: 17px;
+        line-height: 24px;
+
+        width: 235px;
+        height: 44px;
+    }
+
+
+    .vetnutritionist .head_block .exp
+    {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+
+    .vetnutritionist .head_block .img
+    {
+        top: 0;
+        right: 20px;
+        bottom: 0;
+
+        height: 300px;
+        margin: auto 0;
+    }
+
+
+
+    .vetnutritionist .advantages
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .vetnutritionist .advantages .row
+    {
+        justify-content: center;
+
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+
+    .vetnutritionist .advantages .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .vetnutritionist .advantages .item
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        gap: 22px;
+    }
+
+
+    .vetnutritionist .advantages .icon + *
+    {
+        min-height: 40px;
+    }
+
+
+    .vetnutritionist .advantages .desc
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        margin-top: 40px;
+        padding: 19px;
+    }
+
+
+    .vetnutritionist .advantages .desc img
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .vetnutritionist .advantages .desc div
+    {
+        width: calc(100% - 72px);
+    }
+
+
+    .vetnutritionist .advantages .important
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        margin-top: 20px;
+
+        text-align: left;
+    }
+
+
+
+    .vetnutritionist .questions .swiper
+    {
+        padding-bottom: 24px;
+    }
+
+
+    .vetnutritionist .questions .swiper-horizontal > .swiper-pagination-bullets,
+    .vetnutritionist .questions .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .vetnutritionist .questions .swiper-pagination-custom,
+    .vetnutritionist .questions .swiper-pagination-fraction
+    {
+        display: flex !important;
+    }
+
+
+    .vetnutritionist .questions .item .front,
+    .vetnutritionist .questions .item .back
+    {
+        min-height: 400px;
+    }
+
+
+    .vetnutritionist .questions .item .icon
+    {
+        margin-bottom: 10px;
+    }
+
+
+    .vetnutritionist .questions .item .name
+    {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+
+    .vetnutritionist .questions .bottom
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        margin-top: 20px;
+        padding: 19px;
+
+        text-align: center;
+    }
+
+
+    .vetnutritionist .questions .bottom div
+    {
+        width: 100%;
+    }
+
+
+    .vetnutritionist .questions .bottom .btn
+    {
+        font-size: 17px;
+        line-height: 24px;
+
+        width: auto;
+        height: auto;
+        margin: 20px auto 0;
+        padding: 10px 32px;
+    }
+
+
+
+    .vetnutritionist .factors .data
+    {
+        padding: 51px 0 66px;
+    }
+
+
+    .vetnutritionist .factors .row
+    {
+        margin-bottom: -10px;
+        margin-left: -20px;
+        padding: 20px 0 10px;
+    }
+
+
+    .vetnutritionist .factors .row > *
+    {
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+
+    .vetnutritionist .factors .item
+    {
+        font-size: 17px;
+        line-height: 24px;
+
+        padding: 10px 24px 10px 12px;
+    }
+
+
+    .vetnutritionist .factors .item:before
+    {
+                filter: blur(10px);
+        -webkit-filter: blur(10px);
+    }
+
+
+    .vetnutritionist .factors .bottom
+    {
+        padding: 40px 0;
+    }
+
+
+    .vetnutritionist .factors .bottom ul
+    {
+        padding: 19px;
+
+        gap: 12px;
+    }
+
+
+    .vetnutritionist .factors .bottom li
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        min-height: 24px;
+        padding-left: 32px;
+
+        background-size: 24px 24px;
+    }
+
+
+
+    .vetnutritionist .create_diet .swiper
+    {
+        padding-bottom: 24px;
+    }
+
+
+    .vetnutritionist .create_diet .swiper-horizontal > .swiper-pagination-bullets,
+    .vetnutritionist .create_diet .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .vetnutritionist .create_diet .swiper-pagination-custom,
+    .vetnutritionist .create_diet .swiper-pagination-fraction
+    {
+        display: flex !important;
+    }
+
+
+
+    .vetnutritionist .create_diet_info
+    {
+        padding: 40px 0;
+    }
+
+
+    .vetnutritionist .create_diet_info .head
+    {
+        padding: 0 0 20px;
+    }
+
+
+    .vetnutritionist .create_diet_info .head .image
+    {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 12px;
+    }
+
+
+    .vetnutritionist .create_diet_info .head .text
+    {
+        font-size: 17px;
+        line-height: 24px;
+
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .vetnutritionist .create_diet_info .items
+    {
+        margin-top: 20px;
+        margin-bottom: -20px;
+        margin-left: -20px;
+        padding: 0;
+    }
+
+
+    .vetnutritionist .create_diet_info .items > *
+    {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .vetnutritionist .create_diet_info .items > *
+    {
+        min-height: 40px;
+        padding-left: 52px;
+
+        background-size: 40px 40px;
+    }
+
+
+    .vetnutritionist .create_diet_info .bottom
+    {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+
+    .vetnutritionist .create_diet_info .bottom .text
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .vetnutritionist .create_diet_info .bottom .action
+    {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+
+    .vetnutritionist .create_diet_info .bottom .btn
+    {
+        font-size: 17px;
+        line-height: 24px;
+
+        height: auto;
+        padding: 10px;
+    }
+
+
+    .vetnutritionist .create_diet_info .bottom .exp
+    {
+        margin-top: 12px;
+    }
+
+
+
+    .vetnutritionist .problems .data
+    {
+        padding: 20px;
+    }
+
+
+    .vetnutritionist .problems .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+
+    .vetnutritionist .problems .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .vetnutritionist .problems .item
+    {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+
+    .vetnutritionist .problems .bottom
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+
+    .vetnutritionist .problems .bottom .thumb
+    {
+        width: 310px;
+    }
+
+
+    .vetnutritionist .problems .bottom .text
+    {
+        width: calc(100% - 330px);
+    }
+
+
+    .vetnutritionist .problems .bottom .text > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+
+    .vetnutritionist .doctors
+    {
+        padding: 30px 0;
+    }
+
+
+    .vetnutritionist .doctors .block_title
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .vetnutritionist .doctors .swiper-slide
+    {
+        visibility: visible;
+
+        width: 261px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    .vetnutritionist .doctors .doctor .photo
+    {
+        height: auto;
+        padding-bottom: 100%;
+    }
+
+
+
+    .vetnutritionist .basis_of_life .swiper
+    {
+        padding-bottom: 24px;
+    }
+
+
+    .vetnutritionist .basis_of_life .swiper-horizontal > .swiper-pagination-bullets,
+    .vetnutritionist .basis_of_life .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .vetnutritionist .basis_of_life .swiper-pagination-custom,
+    .vetnutritionist .basis_of_life .swiper-pagination-fraction
+    {
+        display: flex !important;
+    }
+
+
+    .vetnutritionist .basis_of_life .item
+    {
+        min-height: 300px;
+        padding: 20px;
+    }
+
+
+    .vetnutritionist .basis_of_life .item .icon
+    {
+        margin-bottom: 12px;
+    }
+
+
+
+    .vetnutritionist .basis_of_life .bottom
+    {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+
+    .vetnutritionist .basis_of_life .bottom .text
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        width: 100%;
+    }
+
+
+    .vetnutritionist .basis_of_life .bottom .btn
+    {
+        font-size: 17px;
+        line-height: 24px;
+
+        width: auto;
+        height: auto;
+        margin: 20px auto 0;
+        padding: 10px 32px;
+    }
+
+
+
+    .vetnutritionist .basis_of_life .notice
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        padding: 20px;
+    }
+
+
+    .vetnutritionist .basis_of_life .notice .icon + *
+    {
+        width: calc(100% - 72px);
+    }
+
+
+
+    .vetnutritionist .tabs
+    {
+        margin-bottom: 20px;
+
+        gap: 20px;
+    }
+
+
+    .vetnutritionist .tabs .btn
+    {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+
+    .vetnutritionist .consult .data
+    {
+        padding: 20px;
+    }
+
+
+    .vetnutritionist .consult .thumb
+    {
+        width: 310px;
+    }
+
+
+    .vetnutritionist .consult .thumb + *
+    {
+        width: calc(100% - 330px);
+    }
+
+
+    .vetnutritionist .consult .items
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        gap: 20px;
+    }
+
+
+    .vetnutritionist .consult .items > *
+    {
+        min-height: 24px;
+        padding-left: 32px;
+
+        background-size: 24px 24px;
+    }
+
+
+
+    .vetnutritionist .accordion_item .head .title
+    {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+
+    .vetnutritionist .accordion_item .data
+    {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+
+
+    .vetnutritionist .prices .table_wrap
+    {
+        height: 308px;
+    }
+
+
+    .vetnutritionist .prices table th
+    {
+        padding: 11px 15px;
+    }
+
+
+    .vetnutritionist .prices table td
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        padding: 11px 15px;
+    }
+
+
+    .vetnutritionist .prices table td.price
+    {
+        width: 112px;
+    }
+
+
+
+    .vetnutritionist .action_block
+    {
+        min-height: 400px;
+        padding: 40px 0;
+    }
+
+
+    .vetnutritionist .action_block .desc
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        width: 600px;
+        margin-top: 12px;
+    }
+
+
+    .vetnutritionist .action_block .btn
+    {
+        font-size: 17px;
+        line-height: 24px;
+
+        margin-top: 40px;
+        padding: 10px 32px;
+    }
+}
+
+
+
+
+@media print,
+(max-width: 767px)
+{
+    .vetnutritionist
+    {
+        gap: 30px;
+    }
+
+
+    .vetnutritionist .head_block
+    {
+        padding: 20px 0;
+    }
+
+
+    .vetnutritionist .head_block .data
+    {
+        width: 100%;
+    }
+
+
+    .vetnutritionist .head_block .desc
+    {
+        margin-top: 8px;
+    }
+
+
+    .vetnutritionist .head_block .bottom
+    {
+        justify-content: center;
+
+        margin-top: 6px;
+
+        text-align: center;
+    }
+
+
+    .vetnutritionist .head_block .btn
+    {
+        width: auto;
+        height: auto;
+        padding: 10px 32px;
+    }
+
+
+    .vetnutritionist .head_block .exp
+    {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+
+    .vetnutritionist .head_block .img
+    {
+        position: relative;
+        right: 0;
+
+        height: 250px;
+        margin: 6px auto 0;
+    }
+
+
+
+    .vetnutritionist .advantages
+    {
+        padding-bottom: 30px;
+    }
+
+
+    .vetnutritionist .advantages .item
+    {
+        padding: 20px 12px;
+
+        gap: 12px;
+    }
+
+
+    .vetnutritionist .advantages .icon + *
+    {
+        min-height: 100px;
+    }
+
+
+    .vetnutritionist .advantages .desc
+    {
+        margin-top: 30px;
+    }
+
+
+    .vetnutritionist .advantages .important
+    {
+        text-align: center;
+    }
+
+
+
+    .vetnutritionist .factors .data
+    {
+        padding: 30px 0 45px;
+    }
+
+
+    .vetnutritionist .factors .row
+    {
+        padding: 15px 0 5px;
+    }
+
+
+    .vetnutritionist .factors .bottom
+    {
+        padding: 30px 0;
+    }
+
+
+
+    .vetnutritionist .create_diet_info
+    {
+        padding: 30px 0;
+    }
+
+
+    .vetnutritionist .create_diet_info .head .text
+    {
+        font-size: 17px;
+        line-height: 24px;
+
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .vetnutritionist .create_diet_info .items
+    {
+        margin-bottom: -12px;
+        margin-left: 0;
+    }
+
+
+    .vetnutritionist .create_diet_info .items > *
+    {
+        width: 100%;
+        margin-bottom: 12px;
+        margin-left: 0;
+    }
+
+
+
+    .vetnutritionist .problems .row
+    {
+        margin-left: 0;
+    }
+
+
+    .vetnutritionist .problems .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .vetnutritionist .problems .bottom
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+
+    .vetnutritionist .problems .bottom .thumb
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .vetnutritionist .problems .bottom .text
+    {
+        width: 100%;
+    }
+
+
+
+    .vetnutritionist .tabs
+    {
+        gap: 12px;
+    }
+
+
+    .vetnutritionist .consult .thumb
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .vetnutritionist .consult .thumb + *
+    {
+        width: 100%;
+    }
+
+
+    .vetnutritionist .consult .items
+    {
+        gap: 12px;
+    }
+
+
+
+    .vetnutritionist .action_block
+    {
+        padding: 30px 0;
+    }
+}

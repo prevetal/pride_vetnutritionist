@@ -1,0 +1,15 @@
+<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Improved health">
+<g id="Vector">
+<path d="M68.5 16.3613C68.5 28.2767 68.5 52.0236 41.088 71.9378C40.7423 72.189 40.2578 72.189 39.9122 71.9378C12.5 52.0236 12.5 28.2767 12.5 16.3613C24.5 16.3613 40.5001 8.36133 40.5001 8.36133C40.5001 8.36133 56.5 16.3613 68.5 16.3613Z" fill="#64B5F6"/>
+<path d="M68.5 16.3613C68.5 28.2767 68.5 52.0236 41.088 71.9378C40.7423 72.189 40.2578 72.189 39.9122 71.9378C12.5 52.0236 12.5 28.2767 12.5 16.3613C24.5 16.3613 40.5001 8.36133 40.5001 8.36133C40.5001 8.36133 56.5 16.3613 68.5 16.3613Z" fill="url(#paint0_linear_2205_163)"/>
+</g>
+<path id="Vector_2" d="M20.5001 24.3613C20.5001 24.3613 24.5001 44.3613 40.5001 56.3613" stroke="#BBDEFB" stroke-width="2" stroke-linecap="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2205_163" x1="40.5" y1="8.36133" x2="40.5" y2="72.3613" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9ED4FF"/>
+<stop offset="1" stop-color="#9ED4FF" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

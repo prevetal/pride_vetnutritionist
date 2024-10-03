@@ -1,0 +1,10 @@
+<svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Approach">
+<path id="Vector" d="M10.6 29.5C10.6 15 10.6 12.5001 3.10004 12.5001M50.6 29.5C50.6 15 50.6 12.5001 58.1 12.5001" stroke="#37A238" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_2" d="M25.6 37.5C30.6 35 35.6 37.5 35.6 37.5" stroke="#1B8CD1" stroke-width="2" stroke-linecap="round"/>
+<g id="Vector_3">
+<path d="M18.1 31.5C24.1 31.5 25.6 35 25.6 37.5C25.6 40 24.1 43.5 18.1 43.5C12.1 43.5 10.6 40 10.6 37.5C10.6 35 12.1 31.5 18.1 31.5Z" stroke="#1B8CD1" stroke-width="2"/>
+<path d="M43.1 31.5C49.1 31.5 50.6 35 50.6 37.5C50.6 40 49.1 43.5 43.1 43.5C37.1 43.5 35.6 40 35.6 37.5C35.6 35 37.1 31.5 43.1 31.5Z" stroke="#1B8CD1" stroke-width="2"/>
+</g>
+</g>
+</svg>
