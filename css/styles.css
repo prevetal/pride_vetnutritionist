@@ -507,7 +507,7 @@ input[type=number]
 }
 
 
-.vetnutritionist .questions .item .expand
+/* .vetnutritionist .questions .item .expand
 {
     position: absolute;
     z-index: 9;
@@ -518,7 +518,7 @@ input[type=number]
     height: 24px;
 
     opacity: .5;
-}
+} */
 
 
 .vetnutritionist .questions .item .inner
@@ -551,7 +551,7 @@ input[type=number]
 }
 
 
-.vetnutritionist .questions .item .back
+/* .vetnutritionist .questions .item .back
 {
     position: absolute;
     top: 0;
@@ -561,7 +561,7 @@ input[type=number]
     height: 100%;
 
     transform: rotateY(180deg);
-}
+} */
 
 
 .vetnutritionist .questions .item .icon
@@ -612,10 +612,10 @@ input[type=number]
 }
 
 
-.vetnutritionist .questions .item:hover .inner
+/* .vetnutritionist .questions .item:hover .inner
 {
     transform: rotateY(180deg);
-}
+} */
 
 
 
